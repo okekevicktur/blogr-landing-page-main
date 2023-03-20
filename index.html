@@ -16,8 +16,7 @@
 </head>
 <body>
   <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
-  <div class="2xl:container md:mx-auto text-white">
-    
+  <div class="2xl:container md:mx-auto text-white"> 
     <div  class="bg-hero bg-no-repeat bg-cover px-20 py-5 bg-center bg-red-400 rounded-bl-3xl" style="background-image: url('./images/bg-pattern-intro-desktop.svg');">
       <div class="flex w-full justify-between py-5" >
       
@@ -30,8 +29,6 @@
           <div>Connect</div>
         </div>
       </div>  
-        
-
         <div class="flex justify-between items-center w-1/6 ">
           <h3>Login</h3>
           <div class="rounded-full text-black py-3 px-6 bg-white">Sign Up</div>
@@ -65,75 +62,65 @@
             </p>
           </div>
         </div>
-        <div class="w-2/4 h-full absolute bottom-10 -right-44">
+        <div class="w-2/4 h-full absolute top-8 -right-52">
           <img src="./images/illustration-editor-desktop.svg" alt="">
         </div>
       </div>
-      <div class="h-96">
 
-    
-      <div class="bg-hero bg-no-repeat bg-cover bg-left-bottom h-96 mt-40  w-full grid grid-col-2 gap-4 grid-flow-col bg-gray-900" style="background-image: url('./images/bg-pattern-circles.svg');">
-        <div class="relative -top-20 left-0 pl-9" >
-          <img src="./images/illustration-phones.svg" alt="phones svg">
-        </div>
-        <div class="mx-auto my-auto">
-         <h1 class="w-2/4 py-4 text-xl font-bold text-left"> State of the Art Infrastructure</h1> 
-         <p class="w-2/4 py-4 text-xl text-left">
-          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      
+      <div class="mt-72 w-full h-80">
+        <div class="bg-hero bg-no-repeat bg-cover bg-left-bottom h-64 rounded-tr-3xl rounded-bl-3xl pb-24 mt-40 flex justify-between bg-gray-900" style="background-image: url('./images/bg-pattern-circles.svg');">
+          <div class=" w-11/12 h-96" >
+            <img class="pl-9 h-full relative -top-14 left-0" src="./images/illustration-phones.svg" alt="phones svg">
+          </div>
+          <div class="w-full items-center pt-8 justify-center text-white">
+            <h1 class="w-11/12 py-4 text-3xl font-bold text-left text-white"> State of the Art Infrastructure</h1> 
+            <p class="w-11/12  text-xl text-left">
+              With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+              This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+            </div>
         </div>
       </div>
+   </div> 
+<!-- //last frame -->
+  <div class="overflow-hidden mt-20 grid grid-col-2 grid-flow-col gap-4 w-full ">
+    <div class="">
+      <img class="w-11/12 relative bottom-0 -left-48" src="./images/illustration-laptop-desktop.svg" alt="">
     </div>
-   </div>
+    <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-2 text-black my-auto">
+      <div class="text-left">
+        <h1 class="py-4 text-2xl font-bold"> Free, open, simple</h1>
+        <p>  
+          Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+      </div>
+      <div class="text-left">
+        <h1 class="py-4 text-2xl font-bold">  Powerful tooling</h1>
+        <p>    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+          capable of producing even the most complicated sites.
+        </p>
+      </div>
+    </div>
+  </div>
    
+  <!-- Footer -->
+  <footer class="bg-gray-900 pl-20 mt-16 flex rounded-tr-3xl">
+    <div class="w-full py-5">
+      <div class="flex flex-wrap justify-between w-3/4 justify-center py-8">
+        <img src="./images/logo.svg" alt="" class="w-16 h-full mr-8 ">
+        <div class="block space-y-2"> <p class="mb-4">Product</p> <p>Overview</p> <p>Pricing</p>  <p>Marketplace</p> <p>Features</p> 
+         <p>Integrations</p> 
+        </div>
+        <div class="block space-y-2"> <p class="mb-4">Company</p>  <p>About</p>  <p>Team</p> <p>Blog</p><p>Careers</p> </div>
+        <div class="block space-y-2"> <p class="mb-4">connect</p>  <p>Contact</p>  <p>Newsletter</p> <p>LinkedIn</p>         </div>
+    </div>
+    
+  </footer>
 
   </div>
-  <!-- Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-
-  Contact
-  Newsletter
-  LinkedIn
-  
-  
-
-
-
-
-  
-
-  Free, open, simple
-  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
-  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
-  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
-
-  Powerful tooling
-  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
-  capable of producing even the most complicated sites.
-
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
+<!--  
+   Company
 
   About
   Team
@@ -142,10 +129,9 @@
 
   Connect
   
-  Contact
-  Newsletter
-  LinkedIn -->
-
+  
+  
+   -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Okeke Victor</a>.
