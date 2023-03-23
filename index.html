@@ -16,9 +16,9 @@
 </head>
 <body>
   <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
-  <div class="2xl:container md:mx-auto text-white"> 
+  <div class="2xl:container mx-auto text-white"> 
     <div  class="bg-hero bg-no-repeat bg-cover px-20 py-5 bg-center bg-red-400 rounded-bl-3xl" style="background-image: url('./images/bg-pattern-intro-desktop.svg');">
-      <div class="flex w-full justify-between py-5" >    
+      <div class=" w-full hidden md:flex justify-between py-5" >    
       <div class="flex w-3/6 ">
         <img src="./images/logo.svg" alt="" class="mr-8">
         <div class="flex flex-wrap justify-around w-3/4   justify-center items-center">
@@ -30,11 +30,11 @@
               </svg>
             </button>
             <ul id="productList" class="absolute text-gray-700 pt-1"> 
-              <li><a class="rounded-t text-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Overview</a></li>
-              <li><a class="bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Pricing</a></li>
-              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Marketplace</a></li>
-              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Features</a></li>
-              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Integrations</a></li>
+              <li><a class="rounded-t text-gray-400 bg-gray-50 hover:text-black py-2 px-4 block whitespace-no-wrap" href="#">Overview</a></li>
+              <li><a class="bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Pricing</a></li>
+              <li><a class="rounded-b bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Marketplace</a></li>
+              <li><a class="rounded-b bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Features</a></li>
+              <li><a class="rounded-b bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Integrations</a></li>
             </ul>
           </div>
           <div class="relative">
@@ -45,10 +45,10 @@
               </svg>
             </button>
             <ul id="companyList" class="absolute text-gray-700 pt-1">
-              <li><a class="rounded-t text-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">About</a></li>
-              <li><a class="bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Team</a></li>
-              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Blog</a></li>
-              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Careers</a></li>
+              <li><a class="rounded-t bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">About</a></li>
+              <li><a class="bg-gray-50 text-gray-400 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Team</a></li>
+              <li><a class="rounded-b text-gray-400 bg-gray-50 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Blog</a></li>
+              <li><a class="rounded-b text-gray-400 bg-gray-50 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Careers</a></li>
 
             </ul>
           </div>
@@ -60,24 +60,25 @@
               </svg>
             </button>
             <ul id="connectList" class="absolute text-gray-700 pt-1" x-show="isOpen"  @click.away="isOpen = false">
-              <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Contact</a></li>
-              <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Newsletter</a></li>
-              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">LinkedIn</a></li>
+              <li><a class="rounded-t  text-gray-400 bg-gray-50 hover:text-black  py-2 px-4 block whitespace-no-wrap" href="#">Contact</a></li>
+              <li><a class="bg-gray-50 text-gray-400 hover:text-black py-2 px-4 block whitespace-no-wrap" href="#">Newsletter</a></li>
+              <li><a class="rounded-b bg-gray-50 text-gray-400 hover:text-black py-2 px-4 block whitespace-no-wrap" href="#">LinkedIn</a></li>
             </ul>
           </div>
         </div>
+        
       </div>  
         <div class="flex justify-between items-center w-1/6 ">
-          <h3>Login</h3>
-          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-bold">Sign Up</div>
+          <h3 class="cursor-pointer">Login</h3>
+          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-bold cursor-pointer hover:bg-red-300 hover:text-white">Sign Up</div>
         </div>
       </div>
       <div class="w-3/4 mx-auto text-center items-center justify-center my-16">
         <h1 class="w-full text-5xl " > A modern publishing platform</h1>
         <h1 class="w-full text-xl my-6 text-gray-100">Grow your audience and build your online brand</h1>
         <div class="flex justify-around mx-auto w-2/6">  
-          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-semibold">Start for Free</div>
-          <h3 class="rounded-full text-black py-3 px-6 text-white border border-white border-2 font-semibold">Learn More</h3>
+          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-semibold cursor-pointer hover:bg-red-300 hover:text-white">Start for Free</div>
+          <h3 class="rounded-full text-black py-3 px-6 text-white border border-white border-2 font-semibold cursor-pointer hover:bg-white hover:text-red-400">Learn More</h3>
         </div>
       </div>
    </div>
@@ -147,11 +148,11 @@
     <div class="w-full py-5">
       <div class="flex flex-wrap justify-between w-3/4 justify-center py-8">
         <img src="./images/logo.svg" alt="" class="w-16 h-full mr-8 ">
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Product</p> <p>Overview</p> <p>Pricing</p>  <p>Marketplace</p> <p>Features</p> 
-         <p>Integrations</p> 
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Product</p> <p class="hover:underline">Overview</p> <p class="hover:underline">Pricing</p>  <p class="hover:underline">Marketplace</p> <p class="hover:underline">Features</p> 
+         <p class="hover:underline">Integrations</p> 
         </div>
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Company</p>  <p>About</p>  <p>Team</p> <p>Blog</p><p>Careers</p> </div>
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Connect</p>  <p>Contact</p>  <p>Newsletter</p> <p>LinkedIn</p>         </div>
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Company</p>  <p class="hover:underline">About</p>  <p class="hover:underline">Team</p> <p class="hover:underline">Blog</p><p class="hover:underline">Careers</p> </div>
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Connect</p>  <p class="hover:underline">Contact</p>  <p class="hover:underline">Newsletter</p> <p class="hover:underline">LinkedIn</p>         </div>
     </div>
     
   </footer>

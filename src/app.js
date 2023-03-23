@@ -4,6 +4,17 @@ const connectMenu= document.getElementById('connect');
 var connectlist= document.getElementById('connectList');
 var productList= document.getElementById('productList');var companylist= document.getElementById('companyList');
 
+
+//hamburger
+function toggleMenu() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  
 window.addEventListener("load", function(){
     var allUl= this.document.querySelectorAll("ul");
     allUl.forEach(ul => ul.style.visibility ="hidden")
