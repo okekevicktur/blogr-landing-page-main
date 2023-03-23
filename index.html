@@ -18,33 +18,71 @@
   <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
   <div class="2xl:container md:mx-auto text-white"> 
     <div  class="bg-hero bg-no-repeat bg-cover px-20 py-5 bg-center bg-red-400 rounded-bl-3xl" style="background-image: url('./images/bg-pattern-intro-desktop.svg');">
-      <div class="flex w-full justify-between py-5" >
-      
+      <div class="flex w-full justify-between py-5" >    
       <div class="flex w-3/6 ">
         <img src="./images/logo.svg" alt="" class="mr-8">
         <div class="flex flex-wrap justify-around w-3/4   justify-center items-center">
-          
-          <div>Product</div>
-          <div>Company</div>
-          <div>Connect</div>
+          <div class="relative">
+            <button id="product" class="text-gray-100 hover:underline font-semibold py-2 px-4 rounded inline-flex items-center">
+              <span>Product</span>
+              <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 14l-5-5 1.41-1.41L10 11.17l3.59-3.58L15 9l-5 5z"/>
+              </svg>
+            </button>
+            <ul id="productList" class="absolute text-gray-700 pt-1"> 
+              <li><a class="rounded-t text-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Overview</a></li>
+              <li><a class="bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Pricing</a></li>
+              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Marketplace</a></li>
+              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Features</a></li>
+              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="relative">
+            <button id="company" class="text-gray-100 hover:underline font-semibold py-2 px-4 rounded inline-flex items-center">
+              <span>Company</span>
+              <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 14l-5-5 1.41-1.41L10 11.17l3.59-3.58L15 9l-5 5z"/>
+              </svg>
+            </button>
+            <ul id="companyList" class="absolute text-gray-700 pt-1">
+              <li><a class="rounded-t text-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">About</a></li>
+              <li><a class="bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Team</a></li>
+              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Blog</a></li>
+              <li><a class="rounded-b bg-gray-50 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Careers</a></li>
+
+            </ul>
+          </div>
+          <div class="relative">
+            <button id="connect" class="text-gray-100 hover:underline group font-semibold py-2 px-4 rounded inline-flex items-center">
+              <span>Connect</span>
+              <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M10 14l-5-5 1.41-1.41L10 11.17l3.59-3.58L15 9l-5 5z"/>
+              </svg>
+            </button>
+            <ul id="connectList" class="absolute text-gray-700 pt-1" x-show="isOpen"  @click.away="isOpen = false">
+              <li><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Contact</a></li>
+              <li><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Newsletter</a></li>
+              <li><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>  
         <div class="flex justify-between items-center w-1/6 ">
           <h3>Login</h3>
-          <div class="rounded-full text-black py-3 px-6 bg-white">Sign Up</div>
+          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-bold">Sign Up</div>
         </div>
       </div>
       <div class="w-3/4 mx-auto text-center items-center justify-center my-16">
         <h1 class="w-full text-5xl " > A modern publishing platform</h1>
-        <h1 class="w-full text-xl my-6">Grow your audience and build your online brand</h1>
+        <h1 class="w-full text-xl my-6 text-gray-100">Grow your audience and build your online brand</h1>
         <div class="flex justify-around mx-auto w-2/6">  
-          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400">Start for Free</div>
-          <h3 class="rounded-full text-black py-3 px-6 text-white border border-white border-2">Learn More</h3>
+          <div class="rounded-full text-black py-3 px-6 bg-white text-red-400 font-semibold">Start for Free</div>
+          <h3 class="rounded-full text-black py-3 px-6 text-white border border-white border-2 font-semibold">Learn More</h3>
         </div>
       </div>
    </div>
    <div class="overflow-hidden text-black w-full text-center relative">
-      <div class="mt-20 pl-20 ">
+      <div class="mt-20 pl-20 text-blue-900">
         <h1 class="w-2/4 mx-auto py-5 mb-8 text-3xl font-bold">Designed for the future</h1>
         <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-4">
           <div class="text-left">
@@ -87,7 +125,7 @@
     <div class="">
       <img class="w-11/12 relative bottom-0 -left-48" src="./images/illustration-laptop-desktop.svg" alt="">
     </div>
-    <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-2 text-black my-auto">
+    <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-2 text-black my-auto text-blue-900">
       <div class="text-left">
         <h1 class="py-4 text-2xl font-bold"> Free, open, simple</h1>
         <p>  
@@ -109,11 +147,11 @@
     <div class="w-full py-5">
       <div class="flex flex-wrap justify-between w-3/4 justify-center py-8">
         <img src="./images/logo.svg" alt="" class="w-16 h-full mr-8 ">
-        <div class="block space-y-2"> <p class="mb-4">Product</p> <p>Overview</p> <p>Pricing</p>  <p>Marketplace</p> <p>Features</p> 
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Product</p> <p>Overview</p> <p>Pricing</p>  <p>Marketplace</p> <p>Features</p> 
          <p>Integrations</p> 
         </div>
-        <div class="block space-y-2"> <p class="mb-4">Company</p>  <p>About</p>  <p>Team</p> <p>Blog</p><p>Careers</p> </div>
-        <div class="block space-y-2"> <p class="mb-4">connect</p>  <p>Contact</p>  <p>Newsletter</p> <p>LinkedIn</p>         </div>
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Company</p>  <p>About</p>  <p>Team</p> <p>Blog</p><p>Careers</p> </div>
+        <div class="block space-y-2"> <p class="mb-4 font-bold">Connect</p>  <p>Contact</p>  <p>Newsletter</p> <p>LinkedIn</p>         </div>
     </div>
     
   </footer>
@@ -136,5 +174,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Okeke Victor</a>.
   </div>
+  <script src="./src/app.js"></script>
 </body>
 </html>
