@@ -17,7 +17,7 @@
 <body>
   <!-- Full-width fluid until the `md` breakpoint, then lock to container -->
   <div class="2xl:container mx-auto text-white"> 
-    <div  class="bg-hero bg-no-repeat bg-cover px-20 py-5 bg-center bg-red-400 rounded-bl-3xl" style="background-image: url('./images/bg-pattern-intro-desktop.svg');">
+    <div  class="bg-hero bg-no-repeat bg-cover lg:px-20 py-5 bg-center bg-red-400 rounded-bl-3xl" style="background-image: url('./images/bg-pattern-intro-desktop.svg');">
       <div class=" w-full hidden md:flex justify-between py-5" >    
       <div class="flex w-3/6 ">
         <img src="./images/logo.svg" alt="" class="mr-8">
@@ -76,45 +76,47 @@
       <div class="w-3/4 lg:w-11/12 mx-auto text-center items-center justify-center my-16">
         <h1 class="w-full text-5xl " > A modern publishing platform</h1>
         <h1 class="w-full text-xl my-6 text-gray-100">Grow your audience and build your online brand</h1>
-        <div class="sm:flex sm:h-auto block h-10 w-full justify-around mx-auto md:w-2/6">  
-          <div class="rounded-full mb-2 xl:mb-0 text-black py-3 px-6 bg-white text-red-400 font-semibold cursor-pointer hover:bg-red-300 hover:text-white">Start for Free</div>
+        <div class="md:flex lg:flex sm:flex h-auto block h-10 w-full justify-around mx-auto md:w-2/6">  
+          <div class="rounded-full mb-2 sm:mb-0 md:mb-0 lg:mb-0 text-black py-3 px-6 bg-white text-red-400 font-semibold cursor-pointer hover:bg-red-300 hover:text-white">Start for Free</div>
           <h3 class="rounded-full  text-black py-3 px-6 text-white border border-white border-2 font-semibold cursor-pointer hover:bg-white hover:text-red-400">Learn More</h3>
         </div>
       </div>
    </div>
-   <div class="overflow-hidden text-black w-full text-center relative">
-      <div class="mt-20 pl-20 text-blue-900">
-        <h1 class="w-2/4 mx-auto py-5 mb-8 text-3xl font-bold">Designed for the future</h1>
-        <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-4">
-          <div class="text-left">
-            <h1 class="w-2/4 py-4 text-xl font-bold">Introducing an extensible editor</h1>
-            <p>  
+   <!-- //Designed for the futre -->
+   <div class="lg:overflow-hidden text-black w-full text-center lg:relative">
+      <div class="mt-16 lg:pl-20 text-blue-900 p-6">
+        <h1 class="lg:w-2/4 w-full mx-auto py-4 mb-8 text-3xl font-bold">Designed for the future</h1>
+        <div class="lg:w-2/4 w-full grid grid-columns-1 lg:grid-rows-2 lg:grid-flow-col lg:gap-4">
+          <div class="lg:w-2/4 lg:h-full h-40 lg:absolute lg:top-8 lg:-right-52">
+            <img src="./images/illustration-editor-desktop.svg" alt="" class="w-full">
+          </div>
+          <div class="lg:text-left text-center mt-56 lg:mt-0">
+            <h1 class="lg:w-2/4 w-2/4 py-4 lg:text-left items-center lg:mx-0 mx-auto text-xl font-bold">Introducing an extensible editor</h1>
+            <p class=" lg:text-left text-center">  
               Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
               The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
               videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
               change the looks of a blog.</p>
           </div>
-          <div class="text-left">
-            <h1 class="w-2/4 py-4 text-xl font-bold">  Robust content management</h1>
+          <div class="lg:text-left text-center lg:mx-0 mx-auto">
+            <h1 class="w-2/4 py-4 text-xl mx-auto font-bold">  Robust content management</h1>
             <p>   Flexible content management enables users to easily move through posts. Increase the usability of your blog 
                   by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
             </p>
           </div>
         </div>
-        <div class="w-2/4 h-full absolute top-8 -right-52">
-          <img src="./images/illustration-editor-desktop.svg" alt="">
-        </div>
+        
       </div>
 
       
-      <div class="mt-72 w-full h-80">
-        <div class="bg-hero bg-no-repeat bg-cover bg-left-bottom h-64 rounded-tr-3xl rounded-bl-3xl pb-24 mt-40 flex justify-between bg-gray-900" style="background-image: url('./images/bg-pattern-circles.svg');">
-          <div class=" w-11/12 h-96" >
-            <img class="pl-9 h-full relative -top-14 left-0" src="./images/illustration-phones.svg" alt="phones svg">
+      <div class="lg:mt-65 w-full lg:h-80 mt-40">
+        <div class=" px-6 bg-hero bg-no-repeat bg-cover bg-left-bottom lg:h-64 rounded-tr-3xl rounded-bl-3xl lg:pb-24 lg:mt-40 block lg:flex lg:justify-between bg-gray-900" style="background-image: url('./images/bg-pattern-circles.svg');">
+          <div class=" lg:w-11/12 lg:h-96 mx-auto" >
+            <img class="lg:pl-9 lg:h-full relative -top-40 lg:-top-14 left-0" src="./images/illustration-phones.svg" alt="phones svg">
           </div>
-          <div class="w-full items-center pt-8 justify-center text-white">
-            <h1 class="w-11/12 py-4 text-3xl font-bold text-left text-white"> State of the Art Infrastructure</h1> 
-            <p class="w-11/12  text-xl text-left">
+          <div class="relative lg:-top-0 -top-40 w-full items-center lg:pt-8 mx-auto lg:justify-center text-white">
+            <h1 class="w-11/12 py-4 text-3xl font-bold lg:text-left text-white"> State of the Art Infrastructure</h1> 
+            <p class="lg:w-11/12 w-full text-xl lg:text-left">
               With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
               This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
             </div>
@@ -122,19 +124,19 @@
       </div>
    </div> 
 <!-- //last frame -->
-  <div class="overflow-hidden mt-20 grid grid-col-2 grid-flow-col gap-4 w-full ">
-    <div class="">
-      <img class="w-11/12 relative bottom-0 -left-48" src="./images/illustration-laptop-desktop.svg" alt="">
+  <div class="overflow-hidden px-6  mx-auto mt-20 lg:grid grid grid-col-1 lg:grid-col-2 lg:grid-flow-col gap-4 w-full ">
+    <div class="w-full">
+      <img class="lg:w-11/12 w-full lg:relative mx-auto lg:bottom-0 lg:-left-48" src="./images/illustration-laptop-desktop.svg" alt="">
     </div>
-    <div class="w-2/4 grid grid-rows-2 grid-flow-col gap-2 text-black my-auto text-blue-900">
-      <div class="text-left">
+    <div class="mx-auto lg:w-11/12 grid lg:grid-rows-2 lg:grid-flow-col gap-2 text-black my-auto text-blue-900">
+      <div class="lg:text-left text-center">
         <h1 class="py-4 text-2xl font-bold"> Free, open, simple</h1>
         <p>  
           Blogr is a free and open source application backed by a large community of helpful developers. It supports 
   features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
   and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
       </div>
-      <div class="text-left">
+      <div class="lg:text-left text-center">
         <h1 class="py-4 text-2xl font-bold">  Powerful tooling</h1>
         <p>    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
           capable of producing even the most complicated sites.
@@ -144,17 +146,17 @@
   </div>
    
   <!-- Footer -->
-  <footer class="bg-gray-900 pl-20 mt-16 flex rounded-tr-3xl">
-    <div class="w-full py-5">
-      <div class="flex flex-wrap justify-between w-3/4 justify-center py-8">
-        <img src="./images/logo.svg" alt="" class="w-16 h-full mr-8 ">
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Product</p> <p class="hover:underline">Overview</p> <p class="hover:underline">Pricing</p>  <p class="hover:underline">Marketplace</p> <p class="hover:underline">Features</p> 
-         <p class="hover:underline">Integrations</p> 
+  <footer class="bg-gray-900 px-6 lg:pl-20 mt-16 lg:flex rounded-tr-3xl">
+    <div class="w-full text-center py-5">
+      <div class="lg:flex block lg:flex-wrap w-full mx-auto lg:justify-between lg:w-11/12 justify-center py-8">
+        <img src="./images/logo.svg" alt="" class="w-36 h-full lg:mx-0 mx-auto mb-8 lg:mb-0 lg:mr-8 ">
+        <div class="block space-y-1"> <p class="my-4 font-bold">Product</p> <p class="hover:underline">Overview</p> <p class="hover:underline">Pricing</p>  <p class="hover:underline">Marketplace</p> <p class="hover:underline">Features</p> 
+         <p class="hover:underline mb-4">Integrations</p> 
         </div>
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Company</p>  <p class="hover:underline">About</p>  <p class="hover:underline">Team</p> <p class="hover:underline">Blog</p><p class="hover:underline">Careers</p> </div>
-        <div class="block space-y-2"> <p class="mb-4 font-bold">Connect</p>  <p class="hover:underline">Contact</p>  <p class="hover:underline">Newsletter</p> <p class="hover:underline">LinkedIn</p>         </div>
+        <div class="block space-y-1"> <p class="my-4 font-bold">Company</p>  <p class="hover:underline">About</p>  <p class="hover:underline">Team</p> <p class="hover:underline">Blog</p><p class="hover:underline ">Careers</p> </div>
+        <div class="block space-y-1"> <p class="my-4 font-bold">Connect</p>  <p class="hover:underline">Contact</p>  <p class="hover:underline">Newsletter</p> <p class="hover:underline">LinkedIn</p>         </div>
+      </div>
     </div>
-    
   </footer>
 
   </div>
